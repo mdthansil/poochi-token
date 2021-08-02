@@ -1,0 +1,308 @@
+* {
+    font-family: "Montserrat";
+}
+
+body {
+    background: #000 url('../img/bg.png');
+    background-repeat: repeat;
+    color: #fff;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* common */
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.section-title span {
+    position: relative;
+}
+
+.section-title span::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: #ffb628;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 5px;
+}
+
+/* top header */
+.top-header {
+    height: 40px;
+    border-bottom: 1px solid #252525;
+    line-height: 40px;
+    /* background: #000; */
+}
+
+.top-header .first-column {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+.top-header .second-column ul {
+    list-style: none;
+}
+
+.top-header .second-column ul>li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.top-header .second-column ul>li:last-child {
+    margin-right: 0;
+}
+
+.top-header .second-column ul>li a {
+    color: #ffb628;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.top-header .second-column ul>li a:hover {
+    opacity: 0.7;
+}
+
+/* main header */
+.main-header {
+    height: 80px;
+    border-bottom: 1px solid #252525;
+    /* background: #000; */
+}
+
+.logo img {
+    display: block;
+    max-width: 120px;
+    margin-top: 23px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin-top: 23px;
+}
+
+.nav-menu ul>li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-menu ul>li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu ul>li a {
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-menu ul>li:not(.buy-btn) a {
+    color: #fff;
+}
+
+.nav-menu ul>li:not(.buy-btn) a:hover {
+    color: #ffb628;
+}
+
+/* hero section */
+.hero-section {
+    min-height: calc(100vh - 120px);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    border-bottom: 1px solid #222;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to top, #151515, #000000);
+    display: none;
+}
+
+.hero-section .left-column p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.hero-section .left-column h1 {
+    font-size: 6em;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hero-section .left-column p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.hero-section .hero-buttons a {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* tokenomics section */
+.tokenomics-section {
+    padding: 70px 0;
+    background: #000;
+}
+
+.tokenomics-item {
+    background: #111111;
+    border: 1px solid #252525;
+    border-bottom-width: 3px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+}
+.tokenomics-item i {
+    color: #ffb628;
+}
+.tokenomics-item h4 {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+.tokenomics-item h5 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffb628;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+/* roadmap section */
+.roadmap-section {
+    padding: 70px 0;
+}
+.roadmap-item {
+    background: #111111;
+    border: 1px solid #252525;
+    border-bottom-width: 3px;
+    border-radius: 5px;
+    padding: 30px 30px;
+    margin-top: 10px;
+}
+.roadmap-item h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: #ffb628;
+}
+.roadmap-item ul {
+    list-style: none;
+}
+.roadmap-item ul>li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+.roadmap-item ul>li:last-child {
+    margin-bottom: 0;
+}
+.roadmap-item ul>li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 free";
+    color: #535353;
+    margin-right: 10px;
+}
+.roadmap-item ul>li.done::before {
+    color: #ffb628;
+}
+
+/* howtobuy section */
+.howtobuy-section {
+    padding: 70px 0;
+    background: #000;
+    border-bottom: 1px solid #252525;
+}
+.howtobuy-section ul {
+    list-style: none;
+}
+.howtobuy-section ul>li {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    background: #111111;
+    padding: 15px 15px;
+    display: block;
+    margin-bottom: 2px;
+    border-radius: 2px;
+}
+.howtobuy-section ul>li .step {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffb628;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+.howtobuy-section ul>li.step-highlight {
+    background: #362400;
+}
+.howtobuy-section ul>li p {
+    margin-bottom: 0;
+}
+.howtobuy-section ul>li a {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.howtobuy-section .buy-btn {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+/* footer */
+.footer {
+    border-top: 1px solid #252525;
+    padding: 20px 0;
+}
+.footer ul{
+    list-style: none;
+    text-align: center;
+}
+.footer ul>li {
+    display: inline;
+    margin-right: 15px;
+}
+.footer ul>li:last-child {
+    margin-right: 0;
+}
+.footer p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
